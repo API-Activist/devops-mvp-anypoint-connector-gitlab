@@ -5,7 +5,7 @@ Implementation content is focused on issues resources of GitLab.
 
 Use the GitLab REST API reference to extend this connector to your needs: https://docs.gitlab.com/ee/api/api_resources.html
 
-![Image of GitLab MuleSoft Connector](https://github.com/API-Activist/devops-mvp-anypoint-connector-gitlab/blob/master/pictures/gitlab.png)
+![Image of Gitlab interaction](https://github.com/API-Activist/devops-mvp-anypoint-connector-gitlab/blob/master/pictures/Gitlab-jenkins-Jira.PNG)
 
 ## Getting started
 This Anypoint Studio MVP (Minimum Viable Product) Connector for GitLab has been built for the MuleSoft Community as a template to reuse and if required further extend. 
@@ -492,8 +492,6 @@ To use this operation, drag and drop it to the canvas and provide:
 		...
 	}
 
-## Example GitLab - Jenkins - Jira
-![Image of Gitlab interaction](https://github.com/API-Activist/devops-mvp-anypoint-connector-gitlab/blob/master/pictures/Gitlab-jenkins-Jira.PNG)
 	
 ## Video Tutorial
 Link to the video tutorial: -to be provided soon-
