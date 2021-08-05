@@ -492,6 +492,9 @@ To use this operation, drag and drop it to the canvas and provide:
 		...
 	}
 
+## Example GitLab - Jenkins - Jira
+![Image of Gitlab interaction](https://github.com/API-Activist/devops-mvp-anypoint-connector-gitlab/blob/master/pictures/Gitlab-jenkins-Jira.PNG)
+	
 ## Video Tutorial
 Link to the video tutorial: -to be provided soon-
 	
