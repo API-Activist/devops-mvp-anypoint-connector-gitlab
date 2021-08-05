@@ -5,7 +5,7 @@ Implementation content is focused on issues resources of GitLab.
 
 Use the GitLab REST API reference to extend this connector to your needs: https://docs.gitlab.com/ee/api/api_resources.html
 
-![Image of GitLab MuleSoft Connector](https://github.com/API-Activist/devops-mvp-anypoint-connector-jenkins/blob/master/mvp-jenkins-connector.png)
+![Image of GitLab MuleSoft Connector](https://github.com/API-Activist/devops-mvp-anypoint-connector-gitlab/blob/master/pictures/max-gitlab.png)
 
 ## Getting started
 This Anypoint Studio MVP (Minimum Viable Product) Connector for GitLab has been built for the MuleSoft Community as a template to reuse and if required further extend. 
@@ -45,7 +45,7 @@ This section describes the installation process for this mvp connector in order 
 - Perform "mvn install" 
 - Connector should be installed successfully
 
-![Image of GitLab MuleSoft Connector](https://github.com/API-Activist/devops-mvp-anypoint-connector-jenkins/blob/master/cmd%20mvn%20install.PNG)
+![Image of GitLab MuleSoft Connector](https://github.com/API-Activist/devops-mvp-anypoint-connector-gitlab/blob/master/pictures/mvn-install.PNG)
 
 ### Step 3 - Adding dependency in Anypoint Studio Project
 After installation is successful, add the following dependency into your anypoint project pom.xml:
@@ -59,14 +59,14 @@ After installation is successful, add the following dependency into your anypoin
 
 The current version of this connector is 0.1.15. Once added, save the pom.xml file and your Mule Palette gets updated and you should see the GitLab connector.
 
-![Image of Jenkins MuleSoft Connector](https://github.com/API-Activist/devops-mvp-anypoint-connector-jenkins/blob/master/jenkins-mule-palette.PNG)
+![Image of Jenkins MuleSoft Connector](https://github.com/API-Activist/devops-mvp-anypoint-connector-gitlab/blob/master/pictures/00_mule_palette.PNG)
 
 ### Step 4 - Create GitLab Configuration
 Before you get started and consume the provided operations, make sure to configure the GitLab Connection within Anypoint Studio. 
 - Url - URL of GitLab installation (i.e. https://gitlab.com)
 - PAT-Token (not password) - Get the Personal Access Token for the specified user - more Information: [Create PAT in GitLab](https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html)
 
-![Image of GitLab MuleSoft Connector](https://github.com/API-Activist/devops-mvp-anypoint-connector-jenkins/blob/master/Jenkins-config.PNG)
+![Image of GitLab MuleSoft Connector](https://github.com/API-Activist/devops-mvp-anypoint-connector-gitlab/blob/master/pictures/01_configuration.PNG)
 
 Now you are all set to use the GitLab Operations.
 
@@ -85,15 +85,15 @@ To use this operation, drag and drop it to the canvas and provide:
 - Issue Id
 - Label(s) - you can add multiple labels seperated by comma.
 
-![Image of GitLab MuleSoft Connector](https://github.com/API-Activist/devops-mvp-anypoint-connector-jenkins/blob/master/Jenkins-config.PNG)
+![Image of GitLab MuleSoft Connector](https://github.com/API-Activist/devops-mvp-anypoint-connector-gitlab/blob/master/pictures/02_mime_type.PNG)
 
 
 Before changing the record in Gitlab:
-![Image of GitLab MuleSoft Connector](https://github.com/API-Activist/devops-mvp-anypoint-connector-jenkins/blob/master/Jenkins-config.PNG)
+![Image of GitLab MuleSoft Connector](https://github.com/API-Activist/devops-mvp-anypoint-connector-gitlab/blob/master/pictures/03_add_label_on_issue_by_id_before-change.PNG)
 
 
 After changing the record in Gitlab: 
-![Image of GitLab MuleSoft Connector](https://github.com/API-Activist/devops-mvp-anypoint-connector-jenkins/blob/master/Jenkins-config.PNG)
+![Image of GitLab MuleSoft Connector](https://github.com/API-Activist/devops-mvp-anypoint-connector-gitlab/blob/master/pictures/03_add_label_on_issue_by_id_after-change.PNG)
 
 Also make sure to change the MIME Type to application/json for the **Add labels on issue** operation
 
@@ -119,7 +119,7 @@ Also make sure to change the MIME Type to application/json for the **Add labels 
 	}
 
 
-### Operation 2: Add labels on issue
+### Operation 2: Clears labels on issue
 This operation clears all labels on a specified issue. The response is a json object containing **all information on the updated issue**.
 
 To use this operation, drag and drop it to the canvas and provide:
@@ -127,7 +127,7 @@ To use this operation, drag and drop it to the canvas and provide:
 - Project Id (not name)
 - Issue Id
 
-![Image of GitLab MuleSoft Connector](https://github.com/API-Activist/devops-mvp-anypoint-connector-jenkins/blob/master/Jenkins-config.PNG)
+![Image of GitLab MuleSoft Connector](https://github.com/API-Activist/devops-mvp-anypoint-connector-gitlab/blob/master/pictures/04_clear_label_on_issue_by_id.PNG)
 
 
 **Example response**:
@@ -156,7 +156,7 @@ To use this operation, drag and drop it to the canvas and provide:
 - Project Id (not name)
 - Issue Id
 
-![Image of GitLab MuleSoft Connector](https://github.com/API-Activist/devops-mvp-anypoint-connector-jenkins/blob/master/Jenkins-config.PNG)
+![Image of GitLab MuleSoft Connector](https://github.com/API-Activist/devops-mvp-anypoint-connector-gitlab/blob/master/pictures/05_close_issue_by_id.PNG)
 
 
 **Example response**:
@@ -181,7 +181,7 @@ To use this operation, drag and drop it to the canvas and provide:
 - Issue Id
 - Comment
 
-![Image of GitLab MuleSoft Connector](https://github.com/API-Activist/devops-mvp-anypoint-connector-jenkins/blob/master/Jenkins-config.PNG)
+![Image of GitLab MuleSoft Connector](https://github.com/API-Activist/devops-mvp-anypoint-connector-gitlab/blob/master/pictures/06_comment_on_issue_by_id.PNG)
 
 
 **Example response**:
@@ -203,10 +203,10 @@ To use this operation, drag and drop it to the canvas and provide:
 - Title
 - Label(s)
 
-![Image of GitLab MuleSoft Connector](https://github.com/API-Activist/devops-mvp-anypoint-connector-jenkins/blob/master/Jenkins-config.PNG)
+![Image of GitLab MuleSoft Connector](https://github.com/API-Activist/devops-mvp-anypoint-connector-gitlab/blob/master/pictures/07_create_incident_with_label.PNG)
 
 Incident created in Gitlab:
-![Image of GitLab MuleSoft Connector](https://github.com/API-Activist/devops-mvp-anypoint-connector-jenkins/blob/master/Jenkins-config.PNG)
+![Image of GitLab MuleSoft Connector](https://github.com/API-Activist/devops-mvp-anypoint-connector-gitlab/blob/master/pictures/07_create_incident_with_label_gitlab_created.PNG)
 
 
 **Example response**:
@@ -231,10 +231,10 @@ To use this operation, drag and drop it to the canvas and provide:
 - Title
 - Label(s)
 
-![Image of GitLab MuleSoft Connector](https://github.com/API-Activist/devops-mvp-anypoint-connector-jenkins/blob/master/Jenkins-config.PNG)
+![Image of GitLab MuleSoft Connector](https://github.com/API-Activist/devops-mvp-anypoint-connector-gitlab/blob/master/pictures/08_create_issue_with_label.PNG)
 
 Issue created in Gitlab:
-![Image of GitLab MuleSoft Connector](https://github.com/API-Activist/devops-mvp-anypoint-connector-jenkins/blob/master/Jenkins-config.PNG)
+![Image of GitLab MuleSoft Connector](https://github.com/API-Activist/devops-mvp-anypoint-connector-gitlab/blob/master/pictures/08_create_issue_with_label_gitlab_created.PNG)
 
 
 **Example response**:
@@ -257,7 +257,7 @@ To use this operation, drag and drop it to the canvas and provide:
 - Project Id (not name)
 - Issue Id
 
-![Image of GitLab MuleSoft Connector](https://github.com/API-Activist/devops-mvp-anypoint-connector-jenkins/blob/master/Jenkins-config.PNG)
+![Image of GitLab MuleSoft Connector](https://github.com/API-Activist/devops-mvp-anypoint-connector-gitlab/blob/master/pictures/09_delete_issue.PNG)
 
 
 **Example response**:
@@ -271,7 +271,7 @@ To use this operation, drag and drop it to the canvas and provide:
 - Connection properties for GitLab 
 - Project Id (not name)
 
-![Image of GitLab MuleSoft Connector](https://github.com/API-Activist/devops-mvp-anypoint-connector-jenkins/blob/master/Jenkins-config.PNG)
+![Image of GitLab MuleSoft Connector](https://github.com/API-Activist/devops-mvp-anypoint-connector-gitlab/blob/master/pictures/10_get_rpoject_closed_issue.PNG)
 
 
 **Example response**:
@@ -297,14 +297,14 @@ To use this operation, drag and drop it to the canvas and provide:
 		}
 	]
 
-### Operation 9: Get project issue statistics
+### Operation 9: Get project issue informations
 This operation gets project information. 
 
 To use this operation, drag and drop it to the canvas and provide:
 - Connection properties for GitLab 
 - Project Id (not name)
 
-![Image of GitLab MuleSoft Connector](https://github.com/API-Activist/devops-mvp-anypoint-connector-jenkins/blob/master/Jenkins-config.PNG)
+![Image of GitLab MuleSoft Connector](https://github.com/API-Activist/devops-mvp-anypoint-connector-gitlab/blob/master/pictures/11_get_project_info.PNG)
 
 
 **Example response**:
@@ -329,7 +329,7 @@ To use this operation, drag and drop it to the canvas and provide:
 - Connection properties for GitLab 
 - Project Id (not name)
 
-![Image of GitLab MuleSoft Connector](https://github.com/API-Activist/devops-mvp-anypoint-connector-jenkins/blob/master/Jenkins-config.PNG)
+![Image of GitLab MuleSoft Connector](https://github.com/API-Activist/devops-mvp-anypoint-connector-gitlab/blob/master/pictures/12_get_project_issues_stats.PNG)
 
 
 **Example response**:
@@ -351,8 +351,6 @@ This operation gets all project issues.
 To use this operation, drag and drop it to the canvas and provide:
 - Connection properties for GitLab 
 - Project Id (not name)
-
-![Image of GitLab MuleSoft Connector](https://github.com/API-Activist/devops-mvp-anypoint-connector-jenkins/blob/master/Jenkins-config.PNG)
 
 
 **Example response**:
@@ -378,7 +376,7 @@ To use this operation, drag and drop it to the canvas and provide:
 - Project Id (not name)
 - Issue Id(s)
 
-![Image of GitLab MuleSoft Connector](https://github.com/API-Activist/devops-mvp-anypoint-connector-jenkins/blob/master/Jenkins-config.PNG)
+![Image of GitLab MuleSoft Connector](https://github.com/API-Activist/devops-mvp-anypoint-connector-gitlab/blob/master/pictures/13_get_project_issues_by_Ids.PNG)
 
 
 **Example response**:
@@ -404,7 +402,7 @@ To use this operation, drag and drop it to the canvas and provide:
 - Project Id (not name)
 - Issue Id
 
-![Image of GitLab MuleSoft Connector](https://github.com/API-Activist/devops-mvp-anypoint-connector-jenkins/blob/master/Jenkins-config.PNG)
+![Image of GitLab MuleSoft Connector](https://github.com/API-Activist/devops-mvp-anypoint-connector-gitlab/blob/master/pictures/14_get_project_issue_notes.PNG)
 
 
 **Example response**:
@@ -427,7 +425,7 @@ To use this operation, drag and drop it to the canvas and provide:
 - Connection properties for GitLab 
 - Project Id (not name)
 
-![Image of GitLab MuleSoft Connector](https://github.com/API-Activist/devops-mvp-anypoint-connector-jenkins/blob/master/Jenkins-config.PNG)
+![Image of GitLab MuleSoft Connector](https://github.com/API-Activist/devops-mvp-anypoint-connector-gitlab/blob/master/pictures/15_get_project_users.PNG)
 
 
 **Example response**:
@@ -452,7 +450,7 @@ To use this operation, drag and drop it to the canvas and provide:
 - Project Id (not name)
 - Issue Id
 
-![Image of GitLab MuleSoft Connector](https://github.com/API-Activist/devops-mvp-anypoint-connector-jenkins/blob/master/Jenkins-config.PNG)
+![Image of GitLab MuleSoft Connector](https://github.com/API-Activist/devops-mvp-anypoint-connector-gitlab/blob/master/pictures/16_reopen_issue.PNG)
 
 
 **Example response**:
@@ -478,7 +476,7 @@ To use this operation, drag and drop it to the canvas and provide:
 	- format: <field>=<value>&<field>=<value>
 	- example: Title=FieldQuery&labels=ITM,DevOps,CICD&description=Its a sample desc here
 
-![Image of GitLab MuleSoft Connector](https://github.com/API-Activist/devops-mvp-anypoint-connector-jenkins/blob/master/Jenkins-config.PNG)
+![Image of GitLab MuleSoft Connector](https://github.com/API-Activist/devops-mvp-anypoint-connector-gitlab/blob/master/pictures/16_update_issues_with_field_query.PNG)
 
 
 **Example response**:
