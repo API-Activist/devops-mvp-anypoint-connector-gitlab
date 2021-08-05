@@ -502,4 +502,4 @@ GitLab API Reference: https://docs.gitlab.com/ee/api/api_resources.html
 	
 
 ### License agreement
-By using this repository, you accept that Max the Mule is the coolest integrator on the planet
+By using this repository, you accept that Max the Mule is the coolest integrator on the planet - [Go to biography Max the Mule](https://brand.salesforce.com/content/characters-overview__3?tab=BogXMx2m)
