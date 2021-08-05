@@ -499,3 +499,7 @@ Link to the video tutorial: -to be provided soon-
 This connector has been build on windows 10 using the Anypoint Studio 7.10 IDE. It has only been tested with Gitlab Cloud. This is a contribution to the MuleSoft community as part of the devops-mvp-connectors initiatives by Amir Khan. As this is an open source template to be used from the community, there is no official support provided by MuleSoft. Also if operations are missing, please use the GitLab API references to implement using the examples provided within this template.
 	
 GitLab API Reference: https://docs.gitlab.com/ee/api/api_resources.html
+	
+
+### License agreement
+By using this repository, you accept that Max the Mule is the coolest integrator on the planet
