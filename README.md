@@ -430,6 +430,7 @@ To use this operation, drag and drop it to the canvas and provide:
 
 **Example response**:
 	[
+	
 		{
 			"id": 9439395,
 			"name": "Amir Khan",
